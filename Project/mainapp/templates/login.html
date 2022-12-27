@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Scienfic Society</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Serif&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Deseret&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/Network-Particles-Hero.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form-.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
-</head>
-
+{% extends 'base.html' %} 
+{% load bootstrap5 %} 
+{% load static %} 
+{% block title %} Home {% endblock %}
+{% block content %}
 <body>
     <div class="card">
         <nav class="navbar navbar-light navbar-expand-md text-end" style="text-align: right;margin-top: -36px;margin-bottom: -53px;">
@@ -66,6 +51,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
-</body>
-
-</html>
+{% endblock %}

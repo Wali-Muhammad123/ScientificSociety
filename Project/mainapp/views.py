@@ -47,7 +47,7 @@ def join_society(request):
         profile.save()
         return redirect('mainapp:profile')
     else:
-        return render(request,'joinsociety.html')
+        return render(request,'Join_Society.html')
 def gallery(request):
     return render(request,'gallery.html')
 def contact(request):
@@ -57,4 +57,4 @@ def contact(request):
         message=request.POST['message']
         return JsonResponse(data={'message':'Message Sent Successfully'})
     else:
-        return render(request,'contact.html')
+        return render(request,'contact_us.html')

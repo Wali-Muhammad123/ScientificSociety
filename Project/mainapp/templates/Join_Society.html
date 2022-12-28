@@ -6,13 +6,13 @@
 <body>
     <div class="card">
         <nav class="navbar navbar-light navbar-expand-md text-end" style="text-align: right;margin-top: -36px;margin-bottom: -53px;">
-            <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-gray-700);"><img class="rounded-circle" src="assets/img/SS_logo_noB.svg" width="111" height="156"><strong><span style="color: rgba(55, 50, 50, 0.9);">Scientific Society</span></strong>&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="{% url 'index' %}" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-gray-700);"><img class="rounded-circle" src="assets/img/SS_logo_noB.svg" width="111" height="156"><strong><span style="color: rgba(55, 50, 50, 0.9);">Scientific Society</span></strong>&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link border rounded-pill" href="index.html" style="margin-right: 19px;color: var(--bs-navbar-brand-hover-color);font-family: 'Noto Sans Deseret', sans-serif;">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active text-end border rounded-pill" href="login.html" style="text-align: right;font-family: 'Noto Sans Deseret', sans-serif;border-bottom-color: var(--bs-navbar-disabled-color);margin-right: 22px;">Login</a></li>
-                        <li class="nav-item"><a class="nav-link text-end border rounded-pill" href="gallery.html" style="text-align: right;font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-navbar-active-color);margin-right: 18px;">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link text-end border rounded-pill" href="contact_us.html" style="text-align: right;font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-navbar-active-color);">Contact us</a></li>
+                        <li class="nav-item"><a class="nav-link border rounded-pill" href="{% url 'index' %}" style="margin-right: 19px;color: var(--bs-navbar-brand-hover-color);font-family: 'Noto Sans Deseret', sans-serif;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active text-end border rounded-pill" href="{% url 'logout' %}" style="text-align: right;font-family: 'Noto Sans Deseret', sans-serif;border-bottom-color: var(--bs-navbar-disabled-color);margin-right: 22px;">Login</a></li>
+                        <li class="nav-item"><a class="nav-link text-end border rounded-pill" href="{% url 'gallery' %}" style="text-align: right;font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-navbar-active-color);margin-right: 18px;">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link text-end border rounded-pill" href="{url 'contact' %}" style="text-align: right;font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-navbar-active-color);">Contact us</a></li>
                     </ul>
                 </div>
             </div>

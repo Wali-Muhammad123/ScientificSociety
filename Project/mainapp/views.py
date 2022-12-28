@@ -50,3 +50,11 @@ def join_society(request):
         return render(request,'joinsociety.html')
 def gallery(request):
     return render(request,'gallery.html')
+def contact(request):
+    if request.method=='POST':
+        name=request.POST['name']
+        email=request.POST['email']
+        message=request.POST['message']
+        return JsonResponse(data={'message':'Message Sent Successfully'})
+    else:
+        return render(request,'contact.html')

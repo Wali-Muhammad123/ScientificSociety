@@ -7,7 +7,7 @@
 <body>
     <div class="card">
         <nav class="navbar navbar-light navbar-expand-md text-end" style="text-align: right;margin-top: -36px;margin-bottom: -53px;">
-            <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-gray-700);"><img class="rounded-circle" src="assets/img/SS_logo_noB.svg" width="111" height="156"><strong><span style="color: rgba(55, 50, 50, 0.9);">Scientific Society</span></strong>&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-gray-700);"><img class="rounded-circle" src="static/img/SS_logo_noB.svg" width="111" height="156"><strong><span style="color: rgba(55, 50, 50, 0.9);">Scientific Society</span></strong>&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link border rounded-pill" href="index.html" style="margin-right: 19px;color: var(--bs-navbar-brand-hover-color);font-family: 'Noto Sans Deseret', sans-serif;">Home</a></li>
@@ -22,7 +22,7 @@
     <h1 style="margin-top: 35px;font-family: Poppins, sans-serif;">Dashboard</h1>
     <section class="py-4 py-xl-5">
         <div class="container">
-            <div class="text-white bg-primary border rounded border-0 border-primary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style="opacity: 1;background: url(&quot;assets/img/SS_1.jpg&quot;);">
+            <div class="text-white bg-primary border rounded border-0 border-primary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style="opacity: 1;background: url(&quot;static/img/SS_1.jpg&quot;);">
                 <div class="pb-2 pb-lg-1">
                     <h2 class="fw-bold mb-2" style="text-align: center;margin-left: 300px;font-family: Poppins, sans-serif;color: var(--bs-black);font-size: 43px;margin-top: 34px;text-shadow: 0px 0px 1px;">Scientific Society</h2>
                     <p class="mb-0" style="margin-left: 320px;font-size: 16px;color: var(--bs-black);">Enlight the world with some professional personnel.</p>
@@ -33,7 +33,7 @@
     <div class="container py-4 py-xl-5" style="margin-top: 29px;">
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;background: url(&quot;assets/img/debate.jpg&quot;);" src="assets/img/debate.jpg">
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;background: url(&quot;static/img/debate.jpg&quot;);" src="static/img/debate.jpg">
                     <div class="card-body p-4">
                         <h4 class="card-title" style="font-family: Poppins, sans-serif;">Debate</h4>
                         <p class="card-text" style="font-family: Poppins, sans-serif;">User can view the debate information.</p><button class="btn btn-primary" type="button" style="margin-left: 104px;">View</button>
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/events.jpg">
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="static/img/events.jpg">
                     <div class="card-body p-4">
                         <h4 class="card-title" style="font-family: Poppins, sans-serif;">Events</h4>
                         <p class="card-text" style="font-family: Poppins, sans-serif;">User can view the event information.</p><button class="btn btn-primary" type="button" style="margin-left: 104px;">View</button>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/img/documents.jpg">
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="static/img/documents.jpg">
                     <div class="card-body p-4">
                         <h4 class="card-title" style="font-family: Poppins, sans-serif;">Documents</h4>
                         <p class="card-text" style="font-family: Poppins, sans-serif;">User can recieve documents.</p><button class="btn btn-primary" type="button" style="margin-left: 104px;">View</button>
@@ -82,5 +82,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="{% url static 'js/Simple-Slider.js' %}"></script>
 P{% endblock %}

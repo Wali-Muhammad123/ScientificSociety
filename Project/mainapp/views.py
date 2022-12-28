@@ -41,7 +41,7 @@ def profile(request):
 def join_society(request):
     user=request.user
     profile=UserProfile.objects.get(user=user)
-    if request.method=='POST':
+    if request.method=='POST' and request.is_ajax:
         society=request.POST['society']
         profile.society=society
         profile.save()
@@ -51,7 +51,7 @@ def join_society(request):
 def gallery(request):
     return render(request,'gallery.html')
 def contact(request):
-    if request.method=='POST':
+    if request.method=='POST' and request.is_ajax:
         name=request.POST['name']
         email=request.POST['email']
         message=request.POST['message']

@@ -6,7 +6,7 @@
 <body>
     <div class="card">
         <nav class="navbar navbar-light navbar-expand-md text-end" style="text-align: right;margin-top: -36px;margin-bottom: -53px;">
-            <div class="container-fluid"><a class="navbar-brand" href="{% url 'index' %}" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-gray-700);"><img class="rounded-circle" src="static/img/SS_logo_noB.svg" width="111" height="156"><strong><span style="color: rgba(55, 50, 50, 0.9);">Scientific Society</span></strong>&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="{% url 'index' %}" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-gray-700);"><img class="rounded-circle" src="{% static 'img/SS_logo_noB.svg' %}" width="111" height="156"><strong><span style="color: rgba(55, 50, 50, 0.9);">Scientific Society</span></strong>&nbsp;</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link border rounded-pill" href="{% url 'index' %}" style="margin-right: 19px;color: var(--bs-navbar-brand-hover-color);font-family: 'Noto Sans Deseret', sans-serif;">Home</a></li>
@@ -27,7 +27,7 @@
         </div>
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="static/img/sports.jpg">
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="{% static 'img/sports.jpg' %}">
                     <div class="card-body p-4" style="background: var(--bs-black);">
                         <h4 class="card-title" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-card-bg);">Sports Society</h4>
                         <p class="card-text" style="font-family: 'Noto Sans Deseret', sans-serif;opacity: 0.69;color: var(--bs-card-bg);">Members of society can organize and manage sports events in the university.</p><a href="credentials.html"><button class="btn btn-primary" type="button" style="margin-left: 110px;">Join Society</button></a>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="background: url(&quot;static/img/coing%20cover.jpg&quot;);"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;background: url(&quot;static/img/coing%20cover.jpg&quot;);" src="static/img/coing%20cover.jpg">
+                <div class="card" style="background: url(&quot;static/img/coing%20cover.jpg&quot;);"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;background: url(&quot;static/img/coing%20cover.jpg&quot;);" src="{% static 'img/coing%20cover.jpg' %}">
                     <div class="card-body p-4" style="background: var(--bs-black);">
                         <h4 class="card-title" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-card-bg);">Coding Society</h4>
                         <p class="card-text" style="font-family: 'Noto Sans Deseret', sans-serif;opacity: 0.69;color: var(--bs-card-bg);">Members of Society can share their coding techniques with other particpants.</p><button class="btn btn-primary" type="button" style="margin-left: 111px;">Join Society</button>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="background: url(&quot;static/img/islamic.jpg&quot;);"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;background: url(&quot;static/img/islamic.jpg&quot;) center / cover no-repeat;" src="static/img/islamic.jpg">
+                <div class="card" style="background: url(&quot;static/img/islamic.jpg&quot;);"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;background: url(&quot;static/img/islamic.jpg&quot;) center / cover no-repeat;" src="{% static 'img/islamic.jpg' %}">
                     <div class="card-body p-4" style="background: var(--bs-black);">
                         <h4 class="card-title" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-card-bg);">Islamic Society</h4>
                         <p class="card-text" style="font-family: 'Noto Sans Deseret', sans-serif;opacity: 0.69;color: var(--bs-card-bg);">Members of Society can debate on Islamic point of view and can share religious content.</p><button class="btn btn-primary" type="button" style="margin-left: 110px;">Join Society</button>
@@ -55,7 +55,7 @@
     <div class="container py-4 py-xl-5">
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
             <div class="col">
-                <div class="card" style="background: url(&quot;static/img/math%20cover.jpg&quot;);"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="static/img/math%20cover.jpg">
+                <div class="card" style="background: url(&quot;static/img/math%20cover.jpg&quot;);"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="{% static 'img/math%20cover.jpg' %}">
                     <div class="card-body p-4" style="background: var(--bs-black);">
                         <h4 class="card-title" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-card-bg);font-weight: bold;">Mathematics Society</h4>
                         <p class="card-text" style="font-family: 'Noto Sans Deseret', sans-serif;opacity: 0.69;color: var(--bs-card-bg);">Members of Society can arrange mathematical competitions or can share mathematical documents.</p><button class="btn btn-primary" type="button" style="margin-left: 110px;">Join Society</button>
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="static/img/SS_2.jpg">
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="{% static 'img/SS_2.jpg' %}">
                     <div class="card-body p-4" style="background: var(--bs-black);">
                         <h4 class="card-title" style="font-family: 'Noto Sans Deseret', sans-serif;color: var(--bs-card-bg);">Art &amp; Design Society</h4>
                         <p class="card-text" style="font-family: 'Noto Sans Deseret', sans-serif;opacity: 0.69;color: var(--bs-card-bg);">Members of Society can share techniques of designing and art.</p><button class="btn btn-primary" type="button" style="margin-left: 111px;margin-bottom: 24px;">Join Society</button>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="background: url(&quot;static/img/physics%20cover.jpg&quot;) center / cover no-repeat;"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="static/img/physics%20cover.jpg">
+                <div class="card" style="background: url(&quot;static/img/physics%20cover.jpg&quot;) center / cover no-repeat;"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="{% static 'img/physics%20cover.jpg' %}">
                     <div class="card-body p-4" style="background: var(--bs-black);">
                         <h4 class="card-title" style="font-family: 'Noto Sans Deseret', sans-serif;font-weight: bold;color: var(--bs-card-bg);">Physics Society</h4>
                         <p class="card-text" style="font-family: 'Noto Sans Deseret', sans-serif;opacity: 0.69;color: var(--bs-card-bg);">Members of Society can conduct physics seminar and competitions.</p><button class="btn btn-primary" type="button" style="margin-left: 110px;margin-bottom: 24px;">Join Society</button>
